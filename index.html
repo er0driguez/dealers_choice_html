@@ -1,8 +1,77 @@
 <html>
     <head>
-        <title>Eating With Ev</title>
+        <title>Eats with Ev</title>
+        
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: helvetica;
+                text-align: center;
+                margin: 0;
+            }
+            #header {
+                color: black;
+                background-color: lavender;
+                border: solid 1px black;
+                padding: 1rem;
+            }
+            #nav {
+                list-style-type: none;
+                margin: 0;
+                padding:  0;
+            }
+            #nav li {
+                display:inline;
+                padding: 30px;
+            }
+            a:hover {
+                background-color: darkviolet;
+                color: lavender;
+                padding: 6px 6px 0 6px; 
+
+            }
+
+            .recipe {
+                border: solid 1px black;
+                float: left;
+                width: calc(100%/3 - 2rem);
+                margin: 1rem
+            }
+            h2 {
+                margin:0;
+            }
+        </style>
     </head>
     <body>
-        <h1>My Secret Recipes</h1>
+        <div id='header'>
+            <div>Backgroung img</div>
+            <h1>Eats With Ev</h1>
+            <ul id='nav'>
+                <li><a>Home</a></li>
+                <li>Breakfast</li>
+                <li>Lunch</li>
+                <li>Dinner</li>
+                <li>Dessert</li>
+                <li>Cooking Tips</li>
+            </ul>
+        </div>
+
+        <div class='recipe' id='one'>
+            <h2>Recipe Name</h2>
+            <div>Photo Here</div>
+            <p>description of recipe</p>
+        </div>
+        <div class='recipe' id='two'>
+            <h2>Recipe Name</h2>
+            <div>Photo Here</div>
+            <p>description of recipe</p>
+        </div>
+        <div class='recipe' id='three'>
+            <h2>Recipe Name</h2>
+            <div>Photo Here</div>
+            <p>description of recipe</p>
+        </div>
     </body>
 </html>
