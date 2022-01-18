@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Eats with Ev</title>
+        <title>Eating with Ev</title>
         
         <style>
             * {
@@ -10,68 +10,128 @@
                 font-family: helvetica;
                 text-align: center;
                 margin: 0;
+                background-color: ghostwhite;
             }
             #header {
                 color: black;
                 background-color: lavender;
-                border: solid 1px black;
-                padding: 1rem;
+                padding: 2rem 0 3rem 0;
+                background-image: url("foodheader.jpeg");
+                background-size: cover;
+                background-position: center;
+                height: 200px;
+                color: white;
+            }
+            #header h1 {
+                text-shadow: 2px 2px black;
             }
             #nav {
                 list-style-type: none;
                 margin: 0;
-                padding:  0;
+                padding:  6px;
+                width: 100%;
+                
+            }
+            #header ul {
+                margin: 0;
+                background-color: forestgreen;
             }
             #nav li {
                 display:inline;
                 padding: 30px;
+                text-shadow: 0px;
+                vertical-align: middle;
             }
             a:hover {
-                background-color: darkviolet;
-                color: lavender;
-                padding: 6px 6px 0 6px; 
-
+                background-color: white;
+                color: forestgreen;
+                padding: 2px; 
             }
-
             .recipe {
-                border: solid 1px black;
+                border: solid 1px silver;
                 float: left;
                 width: calc(100%/3 - 2rem);
                 margin: 1rem
             }
+            
             h2 {
                 margin:0;
+                text-align: left;
+            }
+            h2:hover {
+
+            }
+            .name-desc {
+                text-align: left;
+                padding: 4px;
+                background-color: forestgreen;
+                overflow: hidden;
+                height: 40px;
+            }
+            .name-desc:hover {
+                height: 105px;
+                transition: height 2s;
+                color: cornsilk;
+            }
+            #one > .picture {
+                background-image: url(Spaghetti-Carb-2.webp);
+                margin: 0;
+                height: 150px;
+                background-position: center;
+                background-size: cover;
+                border-bottom: 1px solid silver;
+            }
+            #two > .picture {
+                background-image: url(cioppino.jpeg);
+                margin: 0;
+                height: 150px;
+                background-position: center;
+                background-size: cover;
+                border-bottom: 1px solid silver;
+            }
+            #three > .picture {
+                background-image: url(veggie-fajitas.jpeg);
+                margin: 0;
+                height: 150px;
+                background-position: center;
+                background-size: cover;
+                border-bottom: 1px solid silver;
             }
         </style>
     </head>
     <body>
         <div id='header'>
-            <div>Backgroung img</div>
-            <h1>Eats With Ev</h1>
+            <h1>Eating With Ev</h1>
             <ul id='nav'>
                 <li><a>Home</a></li>
-                <li>Breakfast</li>
-                <li>Lunch</li>
-                <li>Dinner</li>
-                <li>Dessert</li>
-                <li>Cooking Tips</li>
+                <li><a>Breakfast</a></li>
+                <li><a>Lunch</a></li>
+                <li><a>Dinner</a></li>
+                <li><a>Dessert</a></li>
+                <li><a>Cooking Tips</a></li>
             </ul>
         </div>
-
+        <h1>What Should You Make For Dinner This Week?</h1>
         <div class='recipe' id='one'>
-            <h2>Recipe Name</h2>
-            <div>Photo Here</div>
-            <p>description of recipe</p>
+            <div class='picture'></div>
+            <div class='name-desc'>
+            <h2>Spaghetti Carbonara</h2>
+            <p>A Roman favorite for every bacon lover</p>
+            </div>
         </div>
         <div class='recipe' id='two'>
-            <h2>Recipe Name</h2>
-            <div>Photo Here</div>
-            <p>description of recipe</p>
+            <div class='picture'></div>
+            <div class='name-desc'>
+            <h2>Cioppino</h2>
+            <p>This delicious Italian-American fisherman's stew is brimming with fresh seafood.</p>
+            </div>
         </div>
         <div class='recipe' id='three'>
-            <h2>Recipe Name</h2>
-            <div>Photo Here</div>
-            <p>description of recipe</p>
+            <div class='picture'></div>
+            <div class='name-desc'>
+            <h2>Vegetable Fajitas</h2>
+            <p>Eat your colors with this vibrant Mexican classic.</p>
+            </div>
         </div>
     </body>
 </html>
