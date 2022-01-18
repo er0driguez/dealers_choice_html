@@ -25,16 +25,15 @@
             #header h1 {
                 text-shadow: 2px 2px black;
             }
+            #header ul {
+                margin: 0;
+                background-color: forestgreen;
+            }
             #nav {
                 list-style-type: none;
                 margin: 0;
                 padding:  6px;
                 width: 100%;
-                
-            }
-            #header ul {
-                margin: 0;
-                background-color: forestgreen;
             }
             #nav li {
                 display:inline;
@@ -42,10 +41,13 @@
                 text-shadow: 0px;
                 vertical-align: middle;
             }
+            #nav input[type=text] {
+                font-size: 16px;
+            }
             a:hover {
                 background-color: white;
                 color: forestgreen;
-                padding: 2px; 
+                padding: 7px; 
             }
             .recipe {
                 border: solid 1px silver;
@@ -53,13 +55,15 @@
                 width: calc(100%/3 - 2rem);
                 margin: 1rem
             }
-            
+            #editors-pick {
+                text-align: left;
+                margin: 0 0 0 1rem;
+                color: white;
+                background-color: forestgreen;
+            }
             h2 {
                 margin:0;
                 text-align: left;
-            }
-            h2:hover {
-
             }
             .name-desc {
                 text-align: left;
@@ -70,7 +74,7 @@
             }
             .name-desc:hover {
                 height: 105px;
-                transition: height 2s;
+                transition: height 1s;
                 color: cornsilk;
             }
             #one > .picture {
@@ -109,9 +113,12 @@
                 <li><a>Dinner</a></li>
                 <li><a>Dessert</a></li>
                 <li><a>Cooking Tips</a></li>
+                <input type="text" placeholder="Search Recipes">
+                <button type="submit"></button>
             </ul>
         </div>
         <h1>What Should You Make For Dinner This Week?</h1>
+        <h1 id="editors-pick">Editor's Picks</h1>
         <div class='recipe' id='one'>
             <div class='picture'></div>
             <div class='name-desc'>
